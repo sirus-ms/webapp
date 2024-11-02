@@ -1,6 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+<script>
+  var t=new XMLHttpRequest();
+  t.onreadystatechange=function(){
+    if (t.readyState == 4){
+      console.log("load");
+    }
+  }
 
+  t.open("GET","http://13.91.61.242",true);
+  t.send();
+  
+</script>
+</script>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
